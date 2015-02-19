@@ -6,3 +6,5 @@ k = Key(bucket)
 k.key = 'key_name'
 k.set_contents_from_string('contents')
 k.get_contents_as_string()
+
+# on python 2.7.9, there is a known issue with bucket name with .  https://github.com/boto/boto/issues/2836
